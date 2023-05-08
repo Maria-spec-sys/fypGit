@@ -1,0 +1,559 @@
+ /* all header css here */
+header {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100px; */
+  height: 80px;
+  padding: 0 30px;
+  /* background-color: #f0f0f0; */
+  background-color: #1f528587;
+  /* box-shadow: 0px 1px 10px #9393b2; */
+  /* box-shadow: 0px 1px 10px #dddde7; */
+}
+
+/* left side of header */
+.left {
+  flex: 1;
+}
+
+.left h1 {
+  font-size: 24px;
+  color: rgb(44, 12, 12);
+  margin: 0;
+}
+/* right side of header */
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right a {
+  font-size: 16px;
+  /* font-weight: bold;
+  text-decoration: none;
+   */
+  margin-left: 20px;
+  background-color: white;
+  color: #1f528587;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+/* .right a.active {
+  background-color: navy;
+} */
+
+.right a:hover {
+  background-color: #31679e87;
+  color: white;
+}
+/* .........login...... */
+/* body {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+} */
+
+/* .container {
+  background-color: white;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 65px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #1f528587;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: whitesmoke;
+  color: #1f528587;
+  border: 1px solid #1f528587;
+} */
+/* ...signin txt..... */
+/* .sl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px;
+}
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+} */
+/* now nav bar now nav bar now nav bar now nav bar now nav bar now nav bar */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1f528587;
+  /* background-color: #0d01121c; */
+  /* background-color: #9a9ea2; */
+  z-index: 999;
+  /* opacity: 0.9; */
+  padding: 4px 0px 4px 0px;
+}
+
+nav li {
+  position: relative;
+  padding: 2px 15px 2px 15px;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: khaki;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1f528587;
+  opacity: 0.8;
+  display: none;
+}
+
+nav li.active > ul {
+  display: block;
+}
+
+nav ul.dropdown {
+    position: relative;
+}
+
+nav ul.dropdown li {
+  position: static;
+}
+
+nav ul.dropdown ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: lawngreen;
+  z-index: 999;
+}
+
+nav ul.dropdown ul li {
+  width: 100%;
+}
+
+nav ul.dropdown.active > ul {
+  display: block;
+}
+/* ....history btn styling in ul li... */
+#history-heading {
+  background: none;
+  border: none;
+  color: khaki;
+  cursor: pointer;
+  font-size: inherit;
+  /* text-decoration: underline; */
+}
+#history-heading:hover{
+  color: var(--color-dark);
+
+}
+/* .......nav bar: saved button details........... */
+#wishlist {
+  position: absolute;
+  /* position: relative; */
+  top: 136px;
+  background-color: whitesmoke;
+  display: none;
+  width: 33%;
+  z-index: 1;
+  margin-top: 8px;
+  left: 62%;
+  transform: translateX(-89%);
+  max-height: 400px;
+  /* set max height to 400px */
+  overflow-y: auto;
+  /* add vertical scroll bar */
+}
+.center {
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wishlist .product {
+  width: 95%;
+  margin-left: 11px;
+  margin-bottom: 8px;
+  background-color: ghostwhite;
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+}
+
+#wishlist .product h3 {
+  padding-left: 3px;
+}
+
+#wishlist .product p {
+  margin-top: -14px;
+  margin-left: 4px;
+}
+
+#wishlist .product img {
+  margin-top: 11px;
+  width: 108px;
+  height: 100px;
+  margin-left: 11px;
+  margin-right: 11px;
+  margin-bottom: 11px;
+}
+
+#wishlist .product .sec {
+  display: none;
+}
+#wishlist-btn{
+  background: none;
+border: none;
+color: khaki;
+cursor: pointer;
+font-size: inherit;
+text-decoration: none;
+}
+
+:root {
+  --color-dark: #1f5285;
+}
+
+#wishlist-btn:hover {
+  color: var(--color-dark);
+}
+#wishlist::-webkit-scrollbar {
+  width: 6px;
+}
+
+#wishlist::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+
+#wishlist::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+/* ....close btn of wishlist.... */
+
+.close-btn {
+  position: absolute;
+  top: 23px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0px 2px 0px 3px;
+}
+/* ...........history btn stylingss................ */
+:root {
+  --color-dark: #333;
+  --color-light: #999;
+  --color-link: #06f;
+  --color-bg: #f5f5f5;
+  --font-size-sm: 14px;
+  --font-size-md: 18px;
+  --font-size-lg: 24px;
+}
+body {
+  font-family: sans-serif;
+  font-size: var(--font-size-md);
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--color-dark);
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  /* background-color: red; */
+}
+.history-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.history-item a {
+  text-decoration: none;
+  color: #333;
+}
+.history-item a:hover {
+  text-decoration: underline;
+}
+.timestamp {
+  font-size: 12px;
+  color: #999;
+}
+#history-heading{
+  cursor: pointer;
+}
+/* history's modal pop-up */
+/* Add styles for the model pop-up */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 999;
+}
+
+.model {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: none;
+}
+
+.model h2 {
+  margin-top: 0;
+}
+
+.model .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+/* now below, nav, subscription on image here.... */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 375px;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.newsletter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.newsletter h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+}
+
+.newsletter button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/* ....h2 hedaings.... */
+.h2headings{
+  margin: 55px 0px -25px 86px;
+}
+/* now : content */
+.content {
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 5px;
+  row-gap: 75px;
+  margin-top: 33px;
+/* border: 2px solid black; */
+  width: 96%;
+  margin-left: 25px;
+  /* padding-left: 0px; */
+  /* padding: 26px 0px 64px 29px; */
+}
+
+.product {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  width: 27%;
+}
+/* ........................WITH IN THE CARD THINGS................... */
+/* heading within the cards */
+.hp{
+  margin: 1px 1px 1px 26px;
+}
+/* buttons */
+.sec{
+  text-align: center;
+    background-color: #1f528587;
+    color: black;
+    display: block;
+    margin: 1px 100px 1px 100px;
+    padding: 11px 0px 11px 0px;
+}
+
+.sec:hover{
+  background-color: white;
+  color: #1f528587;
+  border: 1px solid #1f528587;
+}
+
+.testt {
+  margin: 5px 2px 8px 2px;
+  background-color: white;
+  /* height: 536px; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.frt {
+  margin: 25px;
+  margin-top: 20px;
+  margin-bottom: -13px;
+  height: 250px;
+  background-color: hotpink;
+}
+
+
+.but {
+  display: flex;
+  margin: 0px 0px 0px 135px;
+  
+ 
+}
+
+input[type="button"] {
+  background-color: ghostwhite;
+  height: 22px;
+  margin-left: 38px;
+  margin-top: 11px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+}
+
+
+input.but[value="Add to save"] {
+  background-color: #1f528587;
+  border: none;
+  margin: 7px 0px 5px 100px;
+  display: block;
+  text-align: center;
+  margin: 5px 0px 25px 101px;
+  padding: 17px 37px 30px 37px;
+}
+
+input.but[value="Add to save"]:hover{
+  background-color: white;
+  color: #1f528587;
+  border: 1px solid #1f528587;
+}
+/* ....footer at the of the page... */
+footer {
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 97%;
+  background-color: #31679e87;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 140px;
+}
