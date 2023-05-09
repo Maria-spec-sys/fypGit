@@ -518,8 +518,19 @@ a:hover {
   
  
 }
-
-input[type="button"] {
+/* ....close btn on wishlist....not main one.... */
+input[value="x"] {
+  background-color: ghostwhite;
+  height: 22px;
+  margin-left: 38px;
+  margin-top: 11px;
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 5px 7px 19px 7px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+}
+/* input[type="button"] {
   background-color: ghostwhite;
   height: 22px;
   margin-left: 38px;
@@ -527,7 +538,7 @@ input[type="button"] {
   border: none;
   cursor: pointer;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
-}
+} */
 
 
 input.but[value="Add to save"] {
@@ -537,13 +548,30 @@ input.but[value="Add to save"] {
   display: block;
   text-align: center;
   margin: 5px 0px 25px 101px;
-  padding: 17px 37px 30px 37px;
+  padding: 17px 37px 17px 37px;
 }
 
 input.but[value="Add to save"]:hover{
   background-color: white;
   color: #1f528587;
   border: 1px solid #1f528587;
+}
+/* .........remove from saved....... */
+.remove-from-saved {
+  /* background-color: white; */
+  background-color: white;
+border: 3px double #1f528587;
+color: #1f528587;
+/* border: none; */
+margin: 7px 0px 5px 100px;
+  display: block;
+text-align: center;
+margin: 5px 0px 25px 101px;
+padding: 17px 9px 17px 9px;
+cursor: pointer;
+}
+.remove-from-saved:focus {
+  outline: none;
 }
 /* ....footer at the of the page... */
 footer {
